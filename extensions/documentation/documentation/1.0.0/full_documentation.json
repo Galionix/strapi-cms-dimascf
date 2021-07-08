@@ -3884,11 +3884,11 @@
     },
     {
       "description": "Staging server",
-      "url": "http://strapi-cms-dimascf.herokuapp.com"
+      "url": "https://strapi-cms-dimascf.herokuapp.com"
     },
     {
       "description": "Production server",
-      "url": "http://strapi-cms-dimascf.herokuapp.com"
+      "url": "https://strapi-cms-dimascf.herokuapp.com"
     }
   ],
   "tags": [
