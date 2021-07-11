@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_atoms_links",
+  "info": {
+    "name": "link",
+    "icon": "wifi"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_atoms_fields",
+  "info": {
+    "name": "fields",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "component": {
+      "type": "string"
+    }
+  }
+}

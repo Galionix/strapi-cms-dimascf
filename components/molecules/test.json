@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_molecules_tests",
+  "info": {
+    "name": "HeroSection",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.title"
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.paragraph"
+    },
+    "back": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.background"
+    }
+  }
+}

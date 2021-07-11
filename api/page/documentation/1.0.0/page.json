@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/products": {
+    "/pages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Product"
+                    "$ref": "#/components/schemas/Page"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Page"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Page"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Page"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewPage"
               }
             }
           }
         }
       }
     },
-    "/products/count": {
+    "/pages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Page"
         ],
         "parameters": []
       }
     },
-    "/products/{slug}": {
+    "/pages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Page"
                 }
               }
             }
@@ -359,11 +359,11 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Page"
         ],
         "parameters": [
           {
-            "name": "slug",
+            "name": "id",
             "in": "path",
             "description": "",
             "deprecated": false,
@@ -373,9 +373,7 @@
             }
           }
         ]
-      }
-    },
-    "/products/{id}": {
+      },
       "put": {
         "deprecated": false,
         "description": "Update a record",
@@ -385,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Page"
                 }
               }
             }
@@ -423,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Page"
         ],
         "requestBody": {
           "description": "",
@@ -431,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewPage"
               }
             }
           }
@@ -497,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Page"
         ],
         "parameters": [
           {
@@ -516,216 +514,283 @@
   },
   "components": {
     "schemas": {
-      "Product": {
+      "Page": {
         "required": [
-          "id",
-          "title",
-          "description",
-          "image",
-          "status"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "price": {
-            "type": "number"
-          },
-          "image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "slug": {
-            "type": "uid"
-          },
-          "categories": {
+          "Page_Components": {
             "type": "array",
             "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "molecules.test"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "paragraph": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "back": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "required": [
+                            "id",
+                            "name",
+                            "hash",
+                            "mime",
+                            "size",
+                            "url",
+                            "provider"
+                          ],
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "alternativeText": {
+                              "type": "string"
+                            },
+                            "caption": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": "integer"
+                            },
+                            "height": {
+                              "type": "integer"
+                            },
+                            "formats": {
+                              "type": "object"
+                            },
+                            "hash": {
+                              "type": "string"
+                            },
+                            "ext": {
+                              "type": "string"
+                            },
+                            "mime": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "number"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "previewUrl": {
+                              "type": "string"
+                            },
+                            "provider": {
+                              "type": "string"
+                            },
+                            "provider_metadata": {
+                              "type": "object"
+                            },
+                            "related": {
+                              "type": "string"
+                            },
+                            "created_by": {
+                              "type": "string"
+                            },
+                            "updated_by": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
                 }
-              }
+              ]
             }
           },
-          "Custom_field": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "required": {
-                  "type": "boolean"
-                },
-                "options": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "status": {
+          "published_at": {
             "type": "string",
-            "default": "published",
-            "enum": [
-              "draft",
-              "published"
-            ]
+            "format": "date-time"
           }
         }
       },
-      "NewProduct": {
-        "required": [
-          "title",
-          "description",
-          "status"
-        ],
+      "NewPage": {
         "properties": {
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "price": {
-            "type": "number"
-          },
-          "slug": {
-            "type": "uid"
-          },
-          "categories": {
+          "Page_Components": {
             "type": "array",
             "items": {
-              "type": "string"
-            }
-          },
-          "Custom_field": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "required": {
-                  "type": "boolean"
-                },
-                "options": {
-                  "type": "string"
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "molecules.test"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "paragraph": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "back": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "required": [
+                            "id",
+                            "name",
+                            "hash",
+                            "mime",
+                            "size",
+                            "url",
+                            "provider"
+                          ],
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "alternativeText": {
+                              "type": "string"
+                            },
+                            "caption": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": "integer"
+                            },
+                            "height": {
+                              "type": "integer"
+                            },
+                            "formats": {
+                              "type": "object"
+                            },
+                            "hash": {
+                              "type": "string"
+                            },
+                            "ext": {
+                              "type": "string"
+                            },
+                            "mime": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "number"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "previewUrl": {
+                              "type": "string"
+                            },
+                            "provider": {
+                              "type": "string"
+                            },
+                            "provider_metadata": {
+                              "type": "object"
+                            },
+                            "related": {
+                              "type": "string"
+                            },
+                            "created_by": {
+                              "type": "string"
+                            },
+                            "updated_by": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
                 }
-              }
+              ]
             }
           },
-          "status": {
+          "published_at": {
             "type": "string",
-            "default": "published",
-            "enum": [
-              "draft",
-              "published"
-            ]
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -739,7 +804,7 @@
   },
   "tags": [
     {
-      "name": "Product"
+      "name": "Page"
     }
   ]
 }
