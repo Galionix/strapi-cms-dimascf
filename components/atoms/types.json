@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_atoms_types",
+  "info": {
+    "name": "types",
+    "icon": "crosshairs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mobile": {
+      "type": "string"
+    },
+    "tablet": {
+      "type": "string"
+    },
+    "desktop": {
+      "type": "string"
+    }
+  }
+}

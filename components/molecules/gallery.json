@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_molecules_galleries",
+  "info": {
+    "name": "gallery",
+    "icon": "fire-alt"
+  },
+  "options": {},
+  "attributes": {
+    "types": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.types"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -7,20 +7,28 @@
   },
   "options": {},
   "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
     "title": {
-      "type": "component",
-      "repeatable": false,
-      "component": "atoms.title"
+      "type": "string",
+      "unique": true
     },
-    "paragraph": {
-      "type": "component",
-      "repeatable": false,
-      "component": "atoms.paragraph"
+    "text": {
+      "type": "richtext"
     },
-    "back": {
+    "types": {
       "type": "component",
       "repeatable": false,
-      "component": "atoms.background"
+      "component": "atoms.types"
     }
   }
 }

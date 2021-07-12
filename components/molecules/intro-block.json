@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_molecules_intro_blocks",
+  "info": {
+    "name": "intro_block",
+    "icon": "compress"
+  },
+  "options": {},
+  "attributes": {
+    "types": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.types"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
