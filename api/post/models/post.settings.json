@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "post"
+    "name": "post",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -33,6 +34,14 @@
         "molecules.test",
         "molecules.text-image"
       ]
+    },
+    "categories": {
+      "via": "posts",
+      "collection": "category"
+    },
+    "tags": {
+      "via": "posts",
+      "collection": "tag"
     }
   }
 }
