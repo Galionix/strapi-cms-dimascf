@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "project"
+    "name": "project",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,6 +32,16 @@
         "molecules.test",
         "molecules.text-image"
       ]
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "molecules.project-general-info"
     }
   }
 }

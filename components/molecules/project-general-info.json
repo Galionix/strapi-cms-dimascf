@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_molecules_project_general_infos",
+  "info": {
+    "name": "project_general_info",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json"
+    }
+  }
+}

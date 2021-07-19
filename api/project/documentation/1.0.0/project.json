@@ -1094,6 +1094,20 @@
               ]
             }
           },
+          "info": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "info": {
+                "type": "object"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -1106,6 +1120,9 @@
                 },
                 "comps": {
                   "type": "dynamiczone"
+                },
+                "info": {
+                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -1702,6 +1719,20 @@
                   ]
                 }
               ]
+            }
+          },
+          "info": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "info": {
+                "type": "object"
+              }
             }
           },
           "localizations": {
