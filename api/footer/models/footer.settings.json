@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "projects",
+  "kind": "singleType",
+  "collectionName": "footers",
   "info": {
-    "name": "project",
-    "description": ""
+    "name": "footer"
   },
   "options": {
     "increments": true,
@@ -24,25 +23,16 @@
       },
       "type": "dynamiczone",
       "components": [
-        "atoms.link",
         "atoms.types",
-        "molecules.gallery",
+        "atoms.link",
+        "molecules.project-general-info",
         "molecules.intro-block",
         "molecules.paragraph",
+        "molecules.gallery",
+        "molecules.custom",
         "molecules.test",
-        "molecules.text-image",
-        "molecules.custom"
+        "molecules.text-image"
       ]
-    },
-    "info": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "molecules.project-general-info"
     }
   }
 }

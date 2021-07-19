@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "projects",
+  "kind": "singleType",
+  "collectionName": "contacts",
   "info": {
-    "name": "project",
+    "name": "contact",
     "description": ""
   },
   "options": {
@@ -29,20 +29,11 @@
         "molecules.gallery",
         "molecules.intro-block",
         "molecules.paragraph",
+        "molecules.project-general-info",
         "molecules.test",
         "molecules.text-image",
         "molecules.custom"
       ]
-    },
-    "info": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "molecules.project-general-info"
     }
   }
 }

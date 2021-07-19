@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/projects": {
+    "/footer": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the footer's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve footer document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Project"
+                    "$ref": "#/components/schemas/Footer"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Footer"
         ],
         "parameters": [
           {
@@ -192,198 +192,16 @@
           }
         ]
       },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Project"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Project"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewProject"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/projects/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "count": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Project"
-        ],
-        "parameters": []
-      }
-    },
-    "/projects/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Project"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Project"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single footer record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve footer document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Footer"
                 }
               }
             }
@@ -421,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Footer"
         ],
         "requestBody": {
           "description": "",
@@ -429,30 +247,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject"
+                "$ref": "#/components/schemas/NewFooter"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single footer record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single footer based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,26 +302,15 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Footer"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Project": {
+      "Footer": {
         "required": [
           "id"
         ],
@@ -531,14 +327,48 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "mobile": {
+                      "type": "string"
+                    },
+                    "tablet": {
+                      "type": "string"
+                    },
+                    "desktop": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.types",
+                        "atoms.link",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -566,27 +396,22 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
                       "type": "string"
                     },
-                    "mobile": {
-                      "type": "string"
-                    },
-                    "tablet": {
-                      "type": "string"
-                    },
-                    "desktop": {
-                      "type": "string"
+                    "info": {
+                      "type": "object"
                     }
                   },
                   "required": [
@@ -598,127 +423,15 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
-                        "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "types": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "mobile": {
-                          "type": "string"
-                        },
-                        "tablet": {
-                          "type": "string"
-                        },
-                        "desktop": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "images": {
-                      "type": "array",
-                      "items": {
-                        "required": [
-                          "id",
-                          "name",
-                          "hash",
-                          "mime",
-                          "size",
-                          "url",
-                          "provider"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "alternativeText": {
-                            "type": "string"
-                          },
-                          "caption": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": "integer"
-                          },
-                          "height": {
-                            "type": "integer"
-                          },
-                          "formats": {
-                            "type": "object"
-                          },
-                          "hash": {
-                            "type": "string"
-                          },
-                          "ext": {
-                            "type": "string"
-                          },
-                          "mime": {
-                            "type": "string"
-                          },
-                          "size": {
-                            "type": "number"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "previewUrl": {
-                            "type": "string"
-                          },
-                          "provider": {
-                            "type": "string"
-                          },
-                          "provider_metadata": {
-                            "type": "object"
-                          },
-                          "related": {
-                            "type": "string"
-                          },
-                          "created_by": {
-                            "type": "string"
-                          },
-                          "updated_by": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "atoms.link",
-                        "atoms.types",
                         "molecules.gallery",
-                        "molecules.intro-block",
-                        "molecules.paragraph",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -827,14 +540,15 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -873,14 +587,156 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "types": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "mobile": {
+                          "type": "string"
+                        },
+                        "tablet": {
+                          "type": "string"
+                        },
+                        "desktop": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "images": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.types",
+                        "atoms.link",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.types",
+                        "atoms.link",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -990,14 +846,15 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -1097,48 +954,8 @@
                   "required": [
                     "id"
                   ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "atoms.link",
-                        "atoms.types",
-                        "molecules.gallery",
-                        "molecules.intro-block",
-                        "molecules.paragraph",
-                        "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "data": {
-                      "type": "object"
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
                 }
               ]
-            }
-          },
-          "info": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              }
             }
           },
           "localizations": {
@@ -1153,9 +970,6 @@
                 },
                 "comps": {
                   "type": "dynamiczone"
-                },
-                "info": {
-                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -1180,7 +994,7 @@
           }
         }
       },
-      "NewProject": {
+      "NewFooter": {
         "properties": {
           "comps": {
             "type": "array",
@@ -1191,14 +1005,48 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "mobile": {
+                      "type": "string"
+                    },
+                    "tablet": {
+                      "type": "string"
+                    },
+                    "desktop": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.types",
+                        "atoms.link",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -1226,27 +1074,22 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
                       "type": "string"
                     },
-                    "mobile": {
-                      "type": "string"
-                    },
-                    "tablet": {
-                      "type": "string"
-                    },
-                    "desktop": {
-                      "type": "string"
+                    "info": {
+                      "type": "object"
                     }
                   },
                   "required": [
@@ -1258,127 +1101,15 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
-                        "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "types": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "mobile": {
-                          "type": "string"
-                        },
-                        "tablet": {
-                          "type": "string"
-                        },
-                        "desktop": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "images": {
-                      "type": "array",
-                      "items": {
-                        "required": [
-                          "id",
-                          "name",
-                          "hash",
-                          "mime",
-                          "size",
-                          "url",
-                          "provider"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "alternativeText": {
-                            "type": "string"
-                          },
-                          "caption": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": "integer"
-                          },
-                          "height": {
-                            "type": "integer"
-                          },
-                          "formats": {
-                            "type": "object"
-                          },
-                          "hash": {
-                            "type": "string"
-                          },
-                          "ext": {
-                            "type": "string"
-                          },
-                          "mime": {
-                            "type": "string"
-                          },
-                          "size": {
-                            "type": "number"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "previewUrl": {
-                            "type": "string"
-                          },
-                          "provider": {
-                            "type": "string"
-                          },
-                          "provider_metadata": {
-                            "type": "object"
-                          },
-                          "related": {
-                            "type": "string"
-                          },
-                          "created_by": {
-                            "type": "string"
-                          },
-                          "updated_by": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "atoms.link",
-                        "atoms.types",
                         "molecules.gallery",
-                        "molecules.intro-block",
-                        "molecules.paragraph",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -1487,14 +1218,15 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -1533,14 +1265,156 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "types": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "mobile": {
+                          "type": "string"
+                        },
+                        "tablet": {
+                          "type": "string"
+                        },
+                        "desktop": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "images": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.types",
+                        "atoms.link",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.types",
+                        "atoms.link",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -1650,14 +1524,15 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "atoms.link",
                         "atoms.types",
-                        "molecules.gallery",
+                        "atoms.link",
+                        "molecules.project-general-info",
                         "molecules.intro-block",
                         "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
                         "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
+                        "molecules.text-image"
                       ]
                     },
                     "id": {
@@ -1757,48 +1632,8 @@
                   "required": [
                     "id"
                   ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "atoms.link",
-                        "atoms.types",
-                        "molecules.gallery",
-                        "molecules.intro-block",
-                        "molecules.paragraph",
-                        "molecules.test",
-                        "molecules.text-image",
-                        "molecules.custom"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "data": {
-                      "type": "object"
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
                 }
               ]
-            }
-          },
-          "info": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              }
             }
           },
           "localizations": {
@@ -1822,7 +1657,7 @@
   },
   "tags": [
     {
-      "name": "Project"
+      "name": "Footer"
     }
   ]
 }

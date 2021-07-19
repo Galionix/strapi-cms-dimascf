@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_molecules_customs",
+  "info": {
+    "name": "custom",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "json"
+    }
+  }
+}

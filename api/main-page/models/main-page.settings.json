@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "projects",
+  "kind": "singleType",
+  "collectionName": "main_pages",
   "info": {
-    "name": "project",
+    "name": "main_page",
     "description": ""
   },
   "options": {
@@ -31,18 +31,9 @@
         "molecules.paragraph",
         "molecules.test",
         "molecules.text-image",
+        "molecules.project-general-info",
         "molecules.custom"
       ]
-    },
-    "info": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "molecules.project-general-info"
     }
   }
 }

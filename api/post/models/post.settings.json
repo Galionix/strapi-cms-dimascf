@@ -1,14 +1,13 @@
 {
   "kind": "collectionType",
-  "collectionName": "projects",
+  "collectionName": "posts",
   "info": {
-    "name": "project",
-    "description": ""
+    "name": "post"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -26,23 +25,14 @@
       "components": [
         "atoms.link",
         "atoms.types",
-        "molecules.gallery",
+        "molecules.project-general-info",
         "molecules.intro-block",
         "molecules.paragraph",
+        "molecules.gallery",
+        "molecules.custom",
         "molecules.test",
-        "molecules.text-image",
-        "molecules.custom"
+        "molecules.text-image"
       ]
-    },
-    "info": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "molecules.project-general-info"
     }
   }
 }

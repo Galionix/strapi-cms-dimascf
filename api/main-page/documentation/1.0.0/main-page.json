@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/projects": {
+    "/main-page": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the main-page's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve main-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Project"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Main-page"
         ],
         "parameters": [
           {
@@ -192,81 +193,18 @@
           }
         ]
       },
-      "post": {
+      "put": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Update a single main-page record",
         "responses": {
           "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Project"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Project"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewProject"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/projects/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
+            "description": "Retrieve main-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,122 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
-        ],
-        "parameters": []
-      }
-    },
-    "/projects/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Project"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Project"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Project"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Project"
+          "Main-page"
         ],
         "requestBody": {
           "description": "",
@@ -429,30 +252,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject"
+                "$ref": "#/components/schemas/NewMain-page"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single main-page record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single main-page based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,26 +307,15 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Main-page"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Project": {
+      "Main-page": {
         "required": [
           "id"
         ],
@@ -538,6 +339,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -573,6 +375,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -605,6 +408,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -718,6 +522,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -834,6 +639,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -880,6 +686,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -997,6 +804,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1110,6 +918,34 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
+                        "molecules.custom"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "info": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.link",
+                        "atoms.types",
+                        "molecules.gallery",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.test",
+                        "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1127,20 +963,6 @@
               ]
             }
           },
-          "info": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              }
-            }
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -1153,9 +975,6 @@
                 },
                 "comps": {
                   "type": "dynamiczone"
-                },
-                "info": {
-                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -1180,7 +999,7 @@
           }
         }
       },
-      "NewProject": {
+      "NewMain-page": {
         "properties": {
           "comps": {
             "type": "array",
@@ -1198,6 +1017,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1233,6 +1053,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1265,6 +1086,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1378,6 +1200,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1494,6 +1317,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1540,6 +1364,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1657,6 +1482,7 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1770,6 +1596,34 @@
                         "molecules.paragraph",
                         "molecules.test",
                         "molecules.text-image",
+                        "molecules.project-general-info",
+                        "molecules.custom"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "info": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.link",
+                        "atoms.types",
+                        "molecules.gallery",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.test",
+                        "molecules.text-image",
+                        "molecules.project-general-info",
                         "molecules.custom"
                       ]
                     },
@@ -1785,20 +1639,6 @@
                   ]
                 }
               ]
-            }
-          },
-          "info": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              }
             }
           },
           "localizations": {
@@ -1820,9 +1660,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Project"
-    }
-  ]
+  "tags": []
 }

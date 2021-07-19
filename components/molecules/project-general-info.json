@@ -1,8 +1,9 @@
 {
-  "collectionName": "components_molecules_project_general_infos",
+  "collectionName": "components_molecules_general_infos",
   "info": {
-    "name": "project_general_info",
-    "icon": "adjust"
+    "name": "general_info",
+    "icon": "adjust",
+    "description": ""
   },
   "options": {},
   "attributes": {
