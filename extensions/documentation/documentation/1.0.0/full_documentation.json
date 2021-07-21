@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/21/2021 1:30:07 AM"
+    "x-generation-date": "07/21/2021 3:17:06 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6077,6 +6077,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -6762,6 +6765,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -7682,6 +7688,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -8360,6 +8369,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -8938,6 +8950,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -9656,6 +9671,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -10743,6 +10761,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -11421,6 +11442,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -11999,6 +12023,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -12763,6 +12790,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -13523,6 +13553,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -14183,6 +14216,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [

@@ -529,6 +529,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1214,6 +1217,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "intro": {
+                      "type": "string"
                     }
                   },
                   "required": [
