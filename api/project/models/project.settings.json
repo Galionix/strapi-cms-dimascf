@@ -27,14 +27,13 @@
         "atoms.link",
         "atoms.types",
         "molecules.gallery",
-        "molecules.intro-block",
         "molecules.paragraph",
         "molecules.test",
         "molecules.text-image",
         "molecules.custom"
       ]
     },
-    "info": {
+    "custom_data": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -43,6 +42,17 @@
         }
       },
       "component": "molecules.project-general-info"
+    },
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "molecules.intro-block",
+      "required": true
     }
   }
 }

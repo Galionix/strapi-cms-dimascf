@@ -27,7 +27,6 @@
         "atoms.link",
         "atoms.types",
         "molecules.project-general-info",
-        "molecules.intro-block",
         "molecules.paragraph",
         "molecules.gallery",
         "molecules.custom",
@@ -42,6 +41,26 @@
     "tags": {
       "via": "posts",
       "collection": "tag"
+    },
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "molecules.intro-block"
+    },
+    "custom_data": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "molecules.project-general-info"
     }
   }
 }

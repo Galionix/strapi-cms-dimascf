@@ -570,6 +570,12 @@
                     "type": "string"
                   }
                 },
+                "intro": {
+                  "type": "component"
+                },
+                "custom_data": {
+                  "type": "component"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {

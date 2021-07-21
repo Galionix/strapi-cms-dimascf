@@ -417,7 +417,7 @@
                     "id": {
                       "type": "string"
                     },
-                    "info": {
+                    "custom_data": {
                       "type": "object"
                     }
                   },
@@ -432,7 +432,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "intro"
               ],
               "properties": {
                 "id": {
@@ -441,7 +442,10 @@
                 "comps": {
                   "type": "dynamiczone"
                 },
-                "info": {
+                "custom_data": {
+                  "type": "component"
+                },
+                "intro": {
                   "type": "component"
                 },
                 "localizations": {
@@ -605,7 +609,7 @@
                     "id": {
                       "type": "string"
                     },
-                    "info": {
+                    "custom_data": {
                       "type": "object"
                     }
                   },

@@ -691,7 +691,7 @@
                     "id": {
                       "type": "string"
                     },
-                    "info": {
+                    "custom_data": {
                       "type": "object"
                     }
                   },
@@ -1372,7 +1372,7 @@
                     "id": {
                       "type": "string"
                     },
-                    "info": {
+                    "custom_data": {
                       "type": "object"
                     }
                   },

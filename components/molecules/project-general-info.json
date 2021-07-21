@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "info": {
+    "custom_data": {
       "type": "json"
     }
   }
