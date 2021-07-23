@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects_pages",
+  "info": {
+    "name": "projects_page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "comps": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "atoms.link",
+        "atoms.types",
+        "molecules.project-general-info",
+        "molecules.intro-block",
+        "molecules.paragraph",
+        "molecules.gallery",
+        "molecules.custom",
+        "molecules.test",
+        "molecules.text-image"
+      ]
+    }
+  }
+}
