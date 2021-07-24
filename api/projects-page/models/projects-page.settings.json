@@ -2,8 +2,7 @@
   "kind": "singleType",
   "collectionName": "projects_pages",
   "info": {
-    "name": "projects_page",
-    "description": ""
+    "name": "projects_page"
   },
   "options": {
     "increments": true,
@@ -31,9 +30,19 @@
         "molecules.paragraph",
         "molecules.gallery",
         "molecules.custom",
-        "molecules.test",
-        "molecules.text-gallery"
+        "molecules.text-gallery",
+        "molecules.test"
       ]
+    },
+    "types": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "atoms.types"
     }
   }
 }
