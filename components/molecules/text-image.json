@@ -1,7 +1,7 @@
 {
   "collectionName": "components_molecules_text_images",
   "info": {
-    "name": "text-image",
+    "name": "TextImage",
     "icon": "language",
     "description": ""
   },
