@@ -1,11 +1,16 @@
 {
-  "collectionName": "components_molecules_text_images",
+  "collectionName": "components_molecules_text_galleries",
   "info": {
-    "name": "TextImage",
-    "icon": "ambulance"
+    "name": "TextGallery",
+    "icon": "allergies"
   },
   "options": {},
   "attributes": {
+    "type": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.types"
+    },
     "images": {
       "collection": "file",
       "via": "related",
@@ -17,11 +22,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "types": {
-      "type": "component",
-      "repeatable": false,
-      "component": "atoms.types"
     },
     "text": {
       "type": "richtext"
