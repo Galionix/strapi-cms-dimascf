@@ -30,8 +30,7 @@
         "molecules.paragraph",
         "molecules.gallery",
         "molecules.custom",
-        "molecules.test",
-        "molecules.text-image"
+        "molecules.test"
       ]
     },
     "categories": {

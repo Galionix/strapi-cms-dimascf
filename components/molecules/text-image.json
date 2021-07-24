@@ -2,20 +2,11 @@
   "collectionName": "components_molecules_text_images",
   "info": {
     "name": "TextImage",
-    "icon": "language",
-    "description": ""
+    "icon": "ambulance"
   },
   "options": {},
   "attributes": {
-    "types": {
-      "type": "component",
-      "repeatable": false,
-      "component": "atoms.types"
-    },
-    "text": {
-      "type": "richtext"
-    },
-    "image": {
+    "images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,6 +17,14 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "types": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.types"
+    },
+    "text": {
+      "type": "richtext"
     }
   }
 }
