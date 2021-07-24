@@ -29,7 +29,10 @@
         "molecules.gallery",
         "molecules.paragraph",
         "molecules.test",
-        "molecules.custom"
+        "molecules.custom",
+        "molecules.project-general-info",
+        "molecules.intro-block",
+        "molecules.text-gallery"
       ]
     },
     "custom_data": {

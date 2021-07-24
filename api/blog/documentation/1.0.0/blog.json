@@ -334,7 +334,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -369,7 +370,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -401,7 +403,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -427,7 +430,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -546,7 +550,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -592,7 +597,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -705,7 +711,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -731,7 +738,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -834,6 +842,123 @@
                   "required": [
                     "id",
                     "image"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.link",
+                        "atoms.types",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-gallery"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "mobile": {
+                          "type": "string"
+                        },
+                        "tablet": {
+                          "type": "string"
+                        },
+                        "desktop": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "images": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
                   ]
                 }
               ]
@@ -900,7 +1025,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -935,7 +1061,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -967,7 +1094,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -993,7 +1121,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -1112,7 +1241,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -1158,7 +1288,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -1271,7 +1402,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -1297,7 +1429,8 @@
                         "molecules.paragraph",
                         "molecules.gallery",
                         "molecules.custom",
-                        "molecules.test"
+                        "molecules.test",
+                        "molecules.text-gallery"
                       ]
                     },
                     "id": {
@@ -1400,6 +1533,123 @@
                   "required": [
                     "id",
                     "image"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "atoms.link",
+                        "atoms.types",
+                        "molecules.project-general-info",
+                        "molecules.intro-block",
+                        "molecules.paragraph",
+                        "molecules.gallery",
+                        "molecules.custom",
+                        "molecules.test",
+                        "molecules.text-gallery"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "mobile": {
+                          "type": "string"
+                        },
+                        "tablet": {
+                          "type": "string"
+                        },
+                        "desktop": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "images": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
                   ]
                 }
               ]

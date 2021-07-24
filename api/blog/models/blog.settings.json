@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "blogs",
   "info": {
-    "name": "blog"
+    "name": "blog",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,7 +31,8 @@
         "molecules.paragraph",
         "molecules.gallery",
         "molecules.custom",
-        "molecules.test"
+        "molecules.test",
+        "molecules.text-gallery"
       ]
     }
   }

@@ -31,7 +31,8 @@
         "molecules.paragraph",
         "molecules.gallery",
         "molecules.custom",
-        "molecules.test"
+        "molecules.test",
+        "molecules.text-gallery"
       ]
     },
     "projects": {
