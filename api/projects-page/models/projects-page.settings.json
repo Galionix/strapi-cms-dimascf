@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects_pages",
+  "info": {
+    "name": "projects_page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "types": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.types",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.intro-block",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "custom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.custom",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "comps": {
+      "type": "dynamiczone",
+      "components": [
+        "molecules.project-general-info",
+        "molecules.paragraph",
+        "molecules.gallery",
+        "molecules.text-gallery",
+        "molecules.test"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
