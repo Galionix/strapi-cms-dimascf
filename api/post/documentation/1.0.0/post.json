@@ -1363,6 +1363,26 @@
               }
             }
           },
+          "seo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "keywords": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -1392,6 +1412,9 @@
                   "type": "component"
                 },
                 "custom_data": {
+                  "type": "component"
+                },
+                "seo": {
                   "type": "component"
                 },
                 "localizations": {
@@ -2195,6 +2218,26 @@
               },
               "custom_data": {
                 "type": "object"
+              }
+            }
+          },
+          "seo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "keywords": {
+                "type": "string"
               }
             }
           },

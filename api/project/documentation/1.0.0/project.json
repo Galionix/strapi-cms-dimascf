@@ -1290,6 +1290,26 @@
               }
             }
           },
+          "seo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "keywords": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -1308,6 +1328,9 @@
                   "type": "component"
                 },
                 "intro": {
+                  "type": "component"
+                },
+                "seo": {
                   "type": "component"
                 },
                 "localizations": {
@@ -2101,6 +2124,26 @@
                 }
               },
               "intro": {
+                "type": "string"
+              }
+            }
+          },
+          "seo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "keywords": {
                 "type": "string"
               }
             }

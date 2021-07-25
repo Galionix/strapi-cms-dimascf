@@ -576,6 +576,9 @@
                 "custom_data": {
                   "type": "component"
                 },
+                "seo": {
+                  "type": "component"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {

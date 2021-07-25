@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_atoms_seos",
+  "info": {
+    "name": "seo",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "keywords": {
+      "type": "richtext"
+    }
+  }
+}
